@@ -1,0 +1,64 @@
+@import url('https://fonts.google.com/specimen/Lobster#standard-styles');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+    color:dimgrey;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, cadetblue, white);
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: bgTransition 8s ease-in-out infinite;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h3{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.social-media{
+    margin-top: 1rem;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    padding: 1rem 4rem;
+    color: dimgrey;
+    border: 1px solid dimgrey;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
+}
+
+a:hover{
+    color: cadetBlue;
+    background-color: dimgrey;
+}
+
+@keyframes bgTransition{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 80% 100%;
+    }
+    100%{
+        background-position: 0% 90%;
+    }
+}
